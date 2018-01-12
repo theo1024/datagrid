@@ -99,4 +99,16 @@ class ToolbarButton
 		return $this;
 	}
 
+
+	/**
+	 * @param array $params
+	 * @return static
+	 */
+	public function addParams(array $params)
+	{
+		$this->params = $this->params + $params;
+
+		return $this;
+	}
+
 }
